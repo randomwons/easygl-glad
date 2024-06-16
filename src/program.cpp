@@ -16,6 +16,13 @@ ProgramUPtr Program::create(const std::string& vertfile, const std::string& frag
     return std::move(program);
 }
 
+ProgramUPtr Program::create(const char* vertShaderSource, const char* fragShaderSource) {
+    auto program = ProgramUPtr(new Program());
+    if(!program->link(vertShaderSource, fragShaderSource))
+        return nullptr;
+    return std::move(program);
+}
+
 
 bool Program::link(const std::vector<ShaderPtr>& shaders) {
     m_program = glCreateProgram();
@@ -56,6 +63,29 @@ bool Program::link(const std::string& vertfile, const std::string& fragfile) {
     }
     return true;
 }
+
+bool Program::link(const char* vertShaderSource, const char* fragShaderSource) {
+    m_program = glCreateProgram();
+
+    std::vector<ShaderPtr> shaders;
+    shaders.emplace_back(Shader::createFromSource(vertShaderSource, GL_VERTEX_SHADER));
+    shaders.emplace_back(Shader::createFromSource(fragShaderSource, GL_FRAGMENT_SHADER));
+
+    for(auto& shader : shaders)
+        glAttachShader(m_program, shader->get());
+    glLinkProgram(m_program);
+
+    int success = 0;
+    glGetProgramiv(m_program, GL_LINK_STATUS, &success);
+    if(!success){
+        char infoLog[1024];
+        glGetProgramInfoLog(m_program, 1024, nullptr, infoLog);
+        printf("Failed to link program %s\n", infoLog);
+        return false;
+    }
+    return true;
+}
+
 
 Program::~Program() {
     if(m_program) {

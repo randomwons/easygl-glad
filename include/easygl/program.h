@@ -14,6 +14,7 @@ class Program {
 public:
     static ProgramUPtr create(const std::vector<ShaderPtr>& shaders);
     static ProgramUPtr create(const std::string& vertfile, const std::string& fragfile);
+    static ProgramUPtr create(const char* vertShaderSource, const char* fragShaderSource);
 
     ~Program();
     uint32_t get() const { return m_program; }
@@ -33,6 +34,7 @@ private:
     Program() {}
     bool link(const std::vector<ShaderPtr>& shaders);
     bool link(const std::string& vertfile, const std::string& fragfile);
+    bool link(const char* vertShaderSource, const char* fragShaderSource);
     uint32_t m_program { 0 };
 
 };
