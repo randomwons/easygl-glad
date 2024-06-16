@@ -1,4 +1,4 @@
-#include "vertex_layout.h"
+#include "easygl/vertex_layout.h"
 
 namespace easygl {
 

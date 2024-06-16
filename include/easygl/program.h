@@ -1,8 +1,8 @@
 #ifndef __PROGRAM_H__
 #define __PROGRAM_H__
 
-#include "easygl.hpp"
-#include "shader.h"
+#include "easygl/easygl.hpp"
+#include "easygl/shader.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>

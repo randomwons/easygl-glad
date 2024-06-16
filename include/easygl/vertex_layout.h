@@ -1,7 +1,7 @@
 #ifndef __VERTEX_LAYOUT_H__
 #define __VERTEX_LAYOUT_H__
 
-#include "easygl.hpp"
+#include "easygl/easygl.hpp"
 
 namespace easygl {
 

@@ -1,4 +1,4 @@
-#include "framebuffer.h"
+#include "easygl/framebuffer.h"
 
 namespace easygl {
 

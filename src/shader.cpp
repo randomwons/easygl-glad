@@ -1,4 +1,4 @@
-#include "shader.h"
+#include "easygl/shader.h"
 
 namespace easygl {
 

@@ -1,7 +1,7 @@
 #ifndef __BUFFER_H__
 #define __BUFFER_H__
 
-#include "easygl.hpp"
+#include "easygl/easygl.hpp"
 
 namespace easygl {
 

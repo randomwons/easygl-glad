@@ -1,4 +1,4 @@
-#include "easygl.hpp"
+#include "easygl/easygl.hpp"
 
 #include <sstream>
 #include <fstream>

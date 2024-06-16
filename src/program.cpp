@@ -1,4 +1,4 @@
-#include "program.h"
+#include "easygl/program.h"
 
 namespace easygl {
 
