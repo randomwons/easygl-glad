@@ -5,7 +5,6 @@
 #include <memory>
 #include <vector>
 #include <string>
-#include <optional>
 #include <iostream>
 
 #define CLASS_PTR(klassName) \

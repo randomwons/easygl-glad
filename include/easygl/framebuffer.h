@@ -1,7 +1,7 @@
 #ifndef __EASYGL_FRAMEBUFFER_H__
 #define __EASYGL_FRAMEBUFFER_H__
 
-#include <easygl/common.hpp>
+#include <easygl/common.h>
 
 namespace easygl {
 

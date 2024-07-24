@@ -1,7 +1,7 @@
 #ifndef __EASYGL_SHADER_H__
 #define __EASYGL_SHADER_H__
 
-#include <easygl/easygl.hpp>
+#include <easygl/common.h>
 #include <easygl/utils.h>
 
 namespace easygl {

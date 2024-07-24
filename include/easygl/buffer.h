@@ -1,7 +1,7 @@
 #ifndef __EASYGL_BUFFER_H__
 #define __EASYGL_BUFFER_H__
 
-#include <easygl/common.hpp>
+#include <easygl/common.h>
 
 namespace easygl {
 
