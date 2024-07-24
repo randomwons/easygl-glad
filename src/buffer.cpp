@@ -1,4 +1,4 @@
-#include "easygl/buffer.h"
+#include <easygl/buffer.h>
 
 namespace easygl {
 

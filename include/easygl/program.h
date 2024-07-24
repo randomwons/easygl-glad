@@ -2,7 +2,7 @@
 #define __EASYGL_PROGRAM_H__
 
 #include <easygl/common.hpp>
-#include "easygl/shader.h"
+#include <easygl/shader.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <glm/gtc/matrix_transform.hpp>
