@@ -1,19 +1,10 @@
-#ifndef __EASY_GL_HPP__
-#define __EASY_GL_HPP__
+#ifndef __EASYGL_HPP__
+#define __EASYGL_HPP__
 
-#include <glad/glad.h>
-#include <memory>
-#include <vector>
-#include <string>
-#include <optional>
-#include <iostream>
+#include <easygl/buffer.h>
+#include <easygl/vertex_layout.h>
+#include <easygl/shader.h>
+#include <easygl/program.h>
+#include <easygl/framebuffer.h>
 
-#define CLASS_PTR(klassName) \
-class klassName; \
-using klassName ## UPtr = std::unique_ptr<klassName>; \
-using klassName ## Ptr = std::shared_ptr<klassName>; \
-using klassName ## WPtr = std::weak_ptr<klassName>;
-
-std::optional<std::string> loadTextFile(const std::string& filename);
-
-#endif // __EASY_GL_HPP__
+#endif // __EASYGL_HPP__

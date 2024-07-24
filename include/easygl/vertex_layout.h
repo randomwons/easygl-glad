@@ -1,7 +1,7 @@
-#ifndef __VERTEX_LAYOUT_H__
-#define __VERTEX_LAYOUT_H__
+#ifndef __EASYGL_VL_H__
+#define __EASYGL_VL_H__
 
-#include "easygl/easygl.hpp"
+#include <easygl/common.hpp>
 
 namespace easygl {
 
@@ -30,4 +30,4 @@ private:
 
 } // namespace easygl
 
-#endif // __VERTEX_LAYOUT_H__
+#endif // __EASYGL_VL_H__

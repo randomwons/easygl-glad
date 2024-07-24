@@ -1,7 +1,8 @@
-#ifndef __SHADER_H__
-#define __SHADER_H__
+#ifndef __EASYGL_SHADER_H__
+#define __EASYGL_SHADER_H__
 
-#include "easygl/easygl.hpp"
+#include <easygl/easygl.hpp>
+#include <easygl/utils.h>
 
 namespace easygl {
 
@@ -24,4 +25,4 @@ private:
 
 } // namespace easygl
 
-#endif // __SHADER_H__
+#endif // __EASYGL_SHADER_H__

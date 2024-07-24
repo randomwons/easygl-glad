@@ -61,6 +61,10 @@ void FrameBuffer::attachRenderBuffer(GLenum attachment, GLenum internalFormat, G
     glBindRenderbuffer(GL_RENDERBUFFER, 0);
 }
 
+void FrameBuffer::setDrawBuffers(int n, GLuint* attachments) {
+    glDrawBuffers(n, attachments);
+}
+
 bool FrameBuffer::complete() const {
     glBindFramebuffer(GL_FRAMEBUFFER, m_framebuffer);
     GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);

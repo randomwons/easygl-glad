@@ -1,7 +1,7 @@
-#ifndef __PROGRAM_H__
-#define __PROGRAM_H__
+#ifndef __EASYGL_PROGRAM_H__
+#define __EASYGL_PROGRAM_H__
 
-#include "easygl/easygl.hpp"
+#include <easygl/common.hpp>
 #include "easygl/shader.h"
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
@@ -43,4 +43,4 @@ private:
 
 } // namespace easygl
 
-#endif // __PROGRAM_H__
+#endif // __EASYGL_PROGRAM_H__

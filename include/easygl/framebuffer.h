@@ -1,7 +1,7 @@
-#ifndef __FRAMEBUFFER_H__
-#define __FRAMEBUFFER_H__
+#ifndef __EASYGL_FRAMEBUFFER_H__
+#define __EASYGL_FRAMEBUFFER_H__
 
-#include "easygl/easygl.hpp"
+#include <easygl/common.hpp>
 
 namespace easygl {
 
@@ -12,7 +12,8 @@ public:
     ~FrameBuffer();
     void attachTexture(GLenum attachment, GLenum internalFormat, GLenum format, GLenum type, GLsizei width, GLsizei height, GLint level = 0);
     void attachRenderBuffer(GLenum attachment, GLenum internalFormat, GLsizei width, GLsizei height);
-    
+    void setDrawBuffers(int n, GLuint* attachments);
+
     void bind() const { glBindFramebuffer(GL_FRAMEBUFFER, m_framebuffer); }
     void unbind() const { glBindFramebuffer(GL_FRAMEBUFFER, 0); }
 
@@ -36,4 +37,4 @@ private:
 
 } // namespace easygl
 
-#endif // __FRAMEBUFFER_H__
+#endif // __EASYGL_FRAMEBUFFER_H__

@@ -1,7 +1,7 @@
-#ifndef __BUFFER_H__
-#define __BUFFER_H__
+#ifndef __EASYGL_BUFFER_H__
+#define __EASYGL_BUFFER_H__
 
-#include "easygl/easygl.hpp"
+#include <easygl/common.hpp>
 
 namespace easygl {
 
@@ -30,4 +30,4 @@ private:
 
 } // namespace easygl
 
-#endif // __BUFFER_H__
+#endif // __EASYGL_BUFFER_H__

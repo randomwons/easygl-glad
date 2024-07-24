@@ -1,7 +1,4 @@
-#include "easygl/easygl.hpp"
-
-#include <sstream>
-#include <fstream>
+#include <easygl/utils.h>
 
 std::optional<std::string> loadTextFile(const std::string& filename) {
 
